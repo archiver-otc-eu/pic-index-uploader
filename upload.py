@@ -84,6 +84,7 @@ async def register_file(storage_file_id, size, checksum):
         "destinationPath": storage_file_id,
         "size": size,
         "mode": "664",
+        "autoDetectAttributes": false,
         "xattrs": {"checksum": checksum, "checksum-algorithm": "adler-32"},
     }
     try:
